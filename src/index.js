@@ -103,6 +103,7 @@ function clearEl(element) {
 }
 
 // funkcja renderCountryInfo wyświetla szczegóły jednego kraju.
+
 function renderCountryInfo(country) {
   clearEl(countryInfo);
 
@@ -118,6 +119,7 @@ function renderCountryInfo(country) {
   countryInfo.appendChild(countryFlag);
 
   // info o stolicy
+  
   const capitalLabel = document.createElement('strong');
   capitalLabel.textContent = 'Capital: ';
   const capital = document.createElement('span');
@@ -126,6 +128,7 @@ function renderCountryInfo(country) {
   countryInfo.appendChild(capital);
 
   // info o populacji
+  
   const populationLabel = document.createElement('strong');
   populationLabel.textContent = 'Population: ';
   const population = document.createElement('span');
@@ -134,7 +137,8 @@ function renderCountryInfo(country) {
   countryInfo.appendChild(population);
 
   // info o językach 
-  const languagesLabel = document.createElement('strong');
+  
+    const languagesLabel = document.createElement('strong');
   languagesLabel.textContent = 'Languages: ';
   const languages = document.createElement('span');
   languages.textContent = Object.values(country.languages).join(', ');
@@ -147,3 +151,6 @@ searchInput.addEventListener('blur', () => {
     clearEl(countryList);
   }
 });
+
+
+console.log(gubie, sie);
