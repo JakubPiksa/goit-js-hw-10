@@ -1,1 +1,1 @@
-# goit-js-hw-10
+https://jakubpiksa.github.io/goit-js-hw-10/
